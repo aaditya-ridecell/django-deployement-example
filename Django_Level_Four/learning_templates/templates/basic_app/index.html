@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% block body_block %}
+<h1>Welcome to Index</h1>
+<h1>This is index.html</h1>
+<!-- we are using inbuilt filters in django.
+They look similar to python ones.
+Make sure the original text and the operation that is to be perform 
+touch each the | operator
+refer this for more info
+https://docs.djangoproject.com/en/3.0/topics/templates/#filters -->
+<h1>{{text|cut:'hello'}}</h1>
+<h1>{{number|add:"99" }}</h1>
+{% endblock %}
